@@ -50,8 +50,8 @@ public class License{
         this.licenseType = licenseType;
     }
 
-    public License withId(String id){
-        this.setId( id );
+    public License withId(String licenseId){
+        this.setLicenseId( licenseId );
         return this;
     }
 
