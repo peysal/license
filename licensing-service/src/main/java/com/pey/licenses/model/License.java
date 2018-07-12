@@ -17,6 +17,8 @@ public class License{
     @Column(name = "product_name", nullable=false)
     private String productName;
     private String licenseType;
+    @Column(name = "comment")
+    private String comment;
 
     public String getLicenseId() {
         return licenseId;
@@ -38,6 +40,10 @@ public class License{
         return productName;
     }
 
+    public String getComment() {
+        return comment;
+    }
+
     public void setProductName(String productName) {
         this.productName = productName;
     }
@@ -48,6 +54,10 @@ public class License{
 
     public void setLicenseType(String licenseType) {
         this.licenseType = licenseType;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
     }
 
     public License withId(String licenseId){
@@ -67,6 +77,11 @@ public class License{
 
     public License withLicenseType(String licenseType){
         this.setLicenseType(licenseType);
+        return this;
+    }
+
+    public License withComment(String comment) {
+        this.setComment(comment);
         return this;
     }
 
