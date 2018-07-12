@@ -1,18 +1,29 @@
 package com.pey.licenses.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="licenses")
 public class License{
 
-    private String id;
+    @Id
+    @Column(name = "license_id", nullable=false)
+    private String licenseId;
+    @Column(name = "organization_id", nullable=false)
     private String organizationId;
+    @Column(name = "product_name", nullable=false)
     private String productName;
     private String licenseType;
 
-    public String getId() {
-        return id;
+    public String getLicenseId() {
+        return licenseId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setLicenseId(String licenseId) {
+        this.licenseId = licenseId;
     }
 
     public String getOrganizationId() {
