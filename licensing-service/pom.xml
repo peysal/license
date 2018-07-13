@@ -14,7 +14,6 @@
          <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-starter-parent</artifactId>
            <version>1.4.4.RELEASE</version>
-           <!-- lookup parent from repository -->
     </parent>
 
     <dependencyManagement>
@@ -33,10 +32,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
