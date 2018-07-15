@@ -8,7 +8,9 @@ import com.pey.licenses.model.License;
 import com.pey.licenses.repository.LicenseRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class LicenseService {
 
     @Autowired
